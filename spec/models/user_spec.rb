@@ -5,6 +5,7 @@ RSpec.describe User, type: :model do
     @user = User.first
   end
 
+  #binding.pry
   it "has many carts" do
     @user.carts.create
     expect(@user.carts.count).to eq(1)

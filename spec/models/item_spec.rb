@@ -29,6 +29,7 @@ RSpec.describe Item, :type => :model do
       @item.save
     end
     it "only returns items with inventory" do
+      #binding.pry
       expect(Item.available_items).to_not include(Item.first)
       expect(Item.available_items.count).to eq(9)
     end

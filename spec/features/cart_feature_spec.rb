@@ -92,6 +92,7 @@ describe 'Feature Test: Cart', :type => :feature do
         end
         @user.reload
         expect(@user.current_cart).to_not be_nil
+        #binding.pry
       end
 
       it "Uses the same cart when adding a second item" do
